@@ -117,7 +117,10 @@ nav .fa{
     border:1px solid black;
     text-align:center;
 }
-
+.grid-item a{
+    color:#080303;
+    text-decoration:none;
+}
 .grid-item img{
     height: 80%;
     width: 90%;
@@ -185,4 +188,42 @@ nav .fa{
         overflow:auto;
         overflow-x:hidden;
     }
+}
+
+.box-1{
+    width:250px;
+    height:250px;
+    background:#05234A;
+    display: inline-block;
+    margin:50px 200px;
+    line-height: 15px;
+    border-radius:25%;
+    float:right
+}
+
+.box-2{
+    width:250px;
+    height:250px;
+    background:#05234A;
+    display:inline-block;
+    margin:50px 200px ;
+    line-height: 15px;
+    border-radius:25%;
+    
+}
+article{
+    padding-top: 75px;
+    display: inline-block;
+}
+p{
+    color:white;
+    font:Poppins;
+}
+.nav-intlink ul li{
+    list-style-type:none;
+    float:left;
+    width:590px;
+    font-style:roboto slab;
+    color:#FFFFFF;
+
 }
