@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    position:fixed;
+    background-color:#148975;
+    top:0px;
+    left:0px;
+    position:relative;
+    
+} 
+nav{
+    display:flex;
+    padding:2% 6%;
+    /* width:1400;
+    height:118; */
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    text-decoration: none;
+}
+nav img{
+    width:250px;
+}
+.nav-links{
+    /* flex:1; */
+    text-align:right;
+}
+.nav-links ul{
+    list-style-type:none;
+}
+.nav-links ul li{
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+    color:#FFFFFF;
+}
+.nav-links ul li a{
+    color:#fff;
+    padding: 14px 16px;
+    font-size:13px;
+}
+.nav-links ul li a:hover:not(.active) {
+    color: rgb(44, 42, 42);
+    font-size: 15px;
+  }
+.nav-links ul li a.active{
+    color: rgb(3, 3, 3);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* image */
+.main-image{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('yannis-h-uaPaEM7MiQQ-unsplash.jpg');
+    min-height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box{
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+}
+.text-box pre{
+    color:rgb(179, 162, 162);
+    font-size: 30px;
+}
+nav .fa{
+    display:none;
+} 
+/* Quote Section */
+.quote-section{
+    margin:auto;
+    padding:100px;
+    width:80%;
+    text-align:center;
+}
+.quote-section h2{
+    color:#080303;
+    text-decoration:underline;
+    text-decoration-color: #D6D6D6;
+}
+.quote-section p{
+    font-family: 'Patrick Hand', cursive;;
+    font-size:20px;
+    color:#080303;
+}
+/* Middle Map Section Style */
+
+.grid-container1{
+    padding: 2%;
+    display:grid;
+    gap: 30px;
+    grid-template-columns:auto auto;
+    background-color:#D6D6D6;
+}
+.grid-container2{
+    gap: 20px;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.grid-item{
+    width:170px;
+    height:130px;
+    border:1px solid black;
+    text-align:center;
+}
+.grid-item a{
+    color:#080303;
+    text-decoration:none;
+}
+.grid-item img{
+    height: 80%;
+    width: 90%;
+    margin-bottom: 2px;
+}
+.recentNews{
+    text-align: center;
+    border:1px solid black;
+    width:300px;
+    height: 480px;
+    background-color:#FFFFFF;
+}
+
+/* media querry for small devices */
+@media(max-width:480px){
+    .text-box pre{
+        font-size:15px;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position:absolute;
+        background:#f5851d;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2;
+        transition:1s;
+    }
+    nav .fa{
+        display:block;
+        color:#fff;
+        margin:10px;
+        font-size:22px;
+        cursor:pointer;
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+
+    /* State Map responsiveness */
+
+    .grid-container1{
+        grid-template-columns: auto;
+        margin: 10px;
+    }
+
+    .grid-container2{
+        grid-template-columns: auto auto;
+        gap: 15px;
+        margin-left: 10px;
+     }
+
+     .grid-item{
+         height: 110px;
+         width: 150px;
+     }
+
+    .recentNews{
+        display: block;
+        width:100%;
+        overflow:auto;
+        overflow-x:hidden;
+    }
+}
+.box-1{
+    width:250px;
+    height:250px;
+    background:#05234A;
+    display: inline-block;
+    margin:50px 200px;
+    line-height: 15px;
+    border-radius:25%;
+    /* float:right; */
+    padding:50px;
+}
+
+.box-2{
+    width:250px;
+    height:250px;
+    background:#05234A;
+    display:inline-block;
+    margin:50px 200px ;
+    line-height: 15px;
+    border-radius:25%;
+    padding:50px;
+    
+}
+article{
+    padding-top: 75px;
+    display: inline-block;
+}
+p{
+    color:white;
+    font:Poppins;
+}
+.nav-intlink ul li{
+    list-style-type:none;
+    float:left;
+    width:590px;
+    font-style:roboto slab;
+    color:#FFFFFF;
+
+}
