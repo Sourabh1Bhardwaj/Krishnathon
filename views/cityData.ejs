@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<div style="text-align: center; padding: 50px  0 50px 0 ; background-color: black; color: beige;">
+    <h2><%= state %></h2>
+</div>
+
+
+<table class="table">
+    <thead>
+    <th scope="col">District</th>
+    <th scope="col">Literacy Rate</th>
+    <th scope="col">School Enrollment Ratio</th>
+    <th scope="col">College Enrollment Ratio</th>
+    <th scope="col">School Dropout Ratio </th>
+    <th scope="col">College Dropout Ratio</th>
+</thead>
+<% distData.forEach(function(city){ %>
+    <tr>
+        
+        <td><%=city.DISTNAME %></td>
+        <td><%= city.LiteracyRate %></td>
+        <td><%= city.SchoolEnrollmentRatio %></td>
+        <td><%= city.CollegeEnrollmentRatio %></td>
+        <td><%= city.SchoolDropoutRatio %></td>
+        <td><%= city.CollegeDropoutRatio %></td>
+    </tr>
+<% }) %>
+
+    
+</table>
+
+<%- include('partials/footer'); -%>

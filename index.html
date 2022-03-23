@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamtvaVidya</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="Logo.jpeg"></a></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#Home" class="active">HOME</a></li>
+                    <li><a href="#About">ABOUT US</a></li>
+                    <li><a href="#Contact">CONTACT US</a></li>
+                    <li><a href="#Login">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <div class="main-image">
+        <div class="text-box">
+            <pre>सुखार्थिनः कुतोविद्या नास्ति विद्यार्थिनः सुखम् ।
+सुखार्थी वा त्यजेद् विद्यां विद्यार्थी वा त्यजेत् सुखम् ॥</pre>
+        </div>
+    </div>
+    <div class="grid-container1">
+        <div class="grid-container2">
+            <div class="grid-item">
+                <img src="Maps\Andhra Pradesh.png" alt="AnP">
+                <p>Andhra Pradesh</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\arunachal pradesh.png" alt="ArP">
+                <p>Arunachal Pradesh</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Assam.png" alt="AnP">
+                <p>Assam</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Bihar.png" alt="AnP">
+                <p>Bihar</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Chhattisgarh.png" alt="AnP">
+                <p>Chhattisgarh</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Goa.png" alt="AnP">
+                <p>Goa</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\gujarat.png" alt="AnP">
+                <p>Gujarat</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Haryana.png" alt="AnP">
+                <p>Haryana</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Himachal Pradesh.png" alt="AnP">
+                <p>Himachal Pradesh</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Jharkhand.png" alt="AnP">
+                <p>Jharkhand</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\karnataka.png" alt="AnP">
+                <p>karnataka</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Kerala.png" alt="AnP">
+                <p>Kerala</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\madhyapradesh.png" alt="AnP">
+                <p>Madhya Pradesh</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Maharastra.png" alt="AnP">
+                <p>Maharastra</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\manipur.png" alt="AnP">
+                <p>Manipur</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\meghalaya.png" alt="AnP">
+                <p>Meghalaya</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\mizoram.png" alt="AnP">
+                <p>Mizoram</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Ngaland.png" alt="AnP">
+                <p>Nagaland</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Odisha.png" alt="AnP">
+                <p>Odisha</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\punjab.png" alt="AnP">
+                <p>Punjab</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Rajasthan.png" alt="AnP">
+                <p>Rajasthan</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Sikkim.png" alt="AnP">
+                <p>Sikkim</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\tamil_nadu.png" alt="AnP">
+                <p>TamilNadu</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Telangana.png" alt="AnP">
+                <p>Telangana</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\tripura.png" alt="AnP">
+                <p>Tripura</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\UP.png" alt="AnP">
+                <p>Uttar Pradesh</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\Uttarakhand.png" alt="AnP">
+                <p>Uttarakhand</p>
+            </div>
+            <div class="grid-item">
+                <img src="Maps\West Bengal.png" alt="AnP">
+                <p>West Bengal</p>
+            </div>
+        </div>
+        <div class="recentNews">
+            <h3>Recent News</h3>
+        </div>
+        <script>
+            var navLinks = document.getElementById("navLink");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>
